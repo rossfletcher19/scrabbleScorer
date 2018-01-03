@@ -7,7 +7,6 @@ import java.util.Map;
 import java.util.HashMap;
 
 
-
 public class Scrabble  {
 
     public static void main(String[] args) {
@@ -51,69 +50,20 @@ public class Scrabble  {
 
             String inputString = bufferedReader.readLine();
 
-//            System.out.println(wordsAndNumbers.get(inputString));
-
             char[] inputCharArray = inputString.toCharArray();
+
             Integer score = 0;
-
-
-
-
             for (char indvChar : inputCharArray) {
-
-//                String temp = Character.toString(indvChar);
-//                System.out.println(temp);
-//
-//
-//                System.out.println(wordsAndNumbers.get(temp));
                 score = score + wordsAndNumbers.get(Character.toString(indvChar));
-
-//                System.out.print();
-
-//                System.out.print(wordsAndNumbers.get(Character.toString(indvChar)));
-
-
-            }
+                }
             System.out.println(score);
 
-//            int sum = 0;
-//
-//            for(int x=0; x<inputCharArray.length; x++) {
-//
-//                String stringArray = new String(inputCharArray);
-//
-//                System.out.println(stringArray);
-//
-//                sum += wordsAndNumbers.get(stringArray);
-//            }
-
-
-//            int i;
-//
-//            for (i = 0; i < inputChar.length; i++) {
-//                System.out.print(inputChar.charAt(i));
-//            }
-
-
-
-
-
-//            System.out.println(inputChar);
-
-//            System.out.println(wordsAndNumbers.get(inputChar));
-
-
-
-        }
-
-
+            }
 
         catch(IOException e)
         {
             e.printStackTrace();
         }
     }
-
-
-    }
+}
 
